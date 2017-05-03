@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WA2-4C-oA5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2CF-Kb-Qt9">
+            <objects>
+                <navigationController id="WA2-4C-oA5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0AQ-2i-lVm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.3171019256" green="0.49609404800000001" blue="0.68520534040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zts-zI-xFY" kind="relationship" relationship="rootViewController" id="ZpH-Vv-0yi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRU-cu-rrR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="168"/>
+        </scene>
+        <!--BestDeals-->
+        <scene sceneID="Ywo-YP-EKT">
+            <objects>
+                <viewController storyboardIdentifier="DealsViewController" id="zts-zI-xFY" customClass="DealsViewController" customModule="BestDeals" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wbA-iY-c7B"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVI-yr-cN2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zty-u2-Nco">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-Wv-H6i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XLv-Zw-sxM">
+                                        <rect key="frame" x="8" y="-64" width="479" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-CG-egv">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="20"/>
+                                                <state key="normal" title="My Deals">
+                                                    <color key="titleColor" red="1" green="0.09992469407" blue="0.31034977079999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3y-YF-V2c">
+                                                <rect key="frame" x="83" y="0.0" width="50" height="20"/>
+                                                <state key="normal" title="Nearby">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBd-d1-STH">
+                                                <rect key="frame" x="153" y="0.0" width="53" height="20"/>
+                                                <state key="normal" title="Clothes">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncv-qB-c3w">
+                                                <rect key="frame" x="226" y="0.0" width="41" height="20"/>
+                                                <state key="normal" title="Home">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-84-Y3N">
+                                                <rect key="frame" x="287" y="0.0" width="35" height="20"/>
+                                                <state key="normal" title="Food">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-PI-S7J">
+                                                <rect key="frame" x="342" y="0.0" width="56" height="20"/>
+                                                <state key="normal" title="Laptops">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzl-U1-ghM">
+                                                <rect key="frame" x="418" y="0.0" width="61" height="20"/>
+                                                <state key="normal" title="Cameras">
+                                                    <color key="titleColor" red="0.31710192561149597" green="0.49609404802322388" blue="0.68520534038543701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="AVP-Xb-BFH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XLv-Zw-sxM" firstAttribute="leading" secondItem="fLj-Wv-H6i" secondAttribute="leading" constant="8" id="J57-Tn-sqZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="Yi3-bl-QPX"/>
+                                    <constraint firstAttribute="bottom" secondItem="XLv-Zw-sxM" secondAttribute="bottom" constant="44" id="bqM-US-jhZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XLv-Zw-sxM" secondAttribute="trailing" constant="189" id="jOw-7y-wt7"/>
+                                    <constraint firstItem="XLv-Zw-sxM" firstAttribute="top" secondItem="fLj-Wv-H6i" secondAttribute="top" constant="-64" id="zGP-2j-ZP0"/>
+                                </constraints>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="px8-Ah-zMV">
+                                <rect key="frame" x="0.0" y="86" width="375" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zts-zI-xFY" id="EkU-Mp-631"/>
+                                    <outlet property="delegate" destination="zts-zI-xFY" id="B2V-R3-qRK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="px8-Ah-zMV" firstAttribute="top" secondItem="fLj-Wv-H6i" secondAttribute="bottom" constant="2" id="2YG-ZO-4I4"/>
+                            <constraint firstItem="fLj-Wv-H6i" firstAttribute="top" secondItem="wbA-iY-c7B" secondAttribute="bottom" id="6vC-xa-ETm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fLj-Wv-H6i" secondAttribute="trailing" constant="-16" id="K97-m4-uMS"/>
+                            <constraint firstItem="px8-Ah-zMV" firstAttribute="leading" secondItem="zty-u2-Nco" secondAttribute="leadingMargin" constant="-16" id="O5R-Tn-sdV"/>
+                            <constraint firstItem="DVI-yr-cN2" firstAttribute="top" secondItem="px8-Ah-zMV" secondAttribute="bottom" id="OLH-hz-DHj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="px8-Ah-zMV" secondAttribute="trailing" constant="-16" id="feU-iK-vSi"/>
+                            <constraint firstItem="fLj-Wv-H6i" firstAttribute="leading" secondItem="zty-u2-Nco" secondAttribute="leadingMargin" constant="-16" id="kF3-nE-tVX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="rGq-lc-xXJ"/>
+                    <navigationItem key="navigationItem" title="BestDeals" id="MgV-6w-MHt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="px8-Ah-zMV" id="gYK-rZ-tTy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeO-r2-hed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="168"/>
+        </scene>
+    </scenes>
+</document>
